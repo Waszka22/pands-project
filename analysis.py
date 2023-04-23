@@ -15,3 +15,6 @@ iris.columns = headers
 
 # print the table
 print(iris)
+
+
+print(iris.describe())
