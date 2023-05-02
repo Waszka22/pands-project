@@ -2,6 +2,7 @@
 
 ___
 The Data was extracted from Fisher's Irish data set. The Famous database from Fisher, 1936
+![Alt text](irir_flowers.png)
 ___
 
 ### Description about database
@@ -19,6 +20,6 @@ The first column represented sepal length, the second column represented sepal w
 * matplotlib. pyplot 
 
 ### # Reference: 
-# https://towardsdatascience.com/dimension-reduction-techniques-with-python-f36ca7009e5c
-# https://www.kaggle.com/code/jchen2186/machine-learning-with-iris-dataset
-# https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+ https://towardsdatascience.com/dimension-reduction-techniques-with-python-f36ca7009e5c
+ https://www.kaggle.com/code/jchen2186/machine-learning-with-iris-dataset
+ https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
