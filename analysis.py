@@ -9,12 +9,21 @@ import numpy as np
 iris_data = pd.read_csv('iris.data',header=None)
 print(iris_data)
 
-# rename all columns
+# name all columns
 column_names=['sepal length in cm','sepal width in cm','petal length in cm','petal width in cm','class']
 iris_data.columns = column_names
 print(iris_data)
 
-""## 1. Outputs a summary of each variable to a single text file"""git
+## Description about database ##git 
+
+# printing data types
+print (iris_data.info())
+# From printing info about data we can see that there is only one categorical data and all are numerical 
+
+# printing summary of dataset
+print (iris_data.describe())
+
+""## 1. Outputs a summary of each variable to a single text file""
 
 # prepare variables
 sepal_len = iris_data['sepal length in cm']
@@ -34,7 +43,7 @@ for key,value in variable_names.items():
 """
 import matplotlib.pyplot as plt
 
-
+# Data Visualisation
 ## Histagram for Sepal Legth (cm)
 
 # An "interface" to matplotlib.axes.Axes.hist() method
@@ -110,3 +119,7 @@ plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 plt.savefig(f'petal_len_hist.png')
 
 plt.show()
+
+# Box plot 
+
+

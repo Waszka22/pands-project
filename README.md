@@ -7,8 +7,12 @@ ___
 
 ### Description about database
 The Iris Data set has 150 rows and 5 colums. 
-No missing data in this dataset
-The first column represented sepal length, the second column represented sepal width, the third column represented petal length, and the fourth column represented petal width
+The data has two dimension.
+No missing data in this dataset.
+The first column represented sepal length, the second column represented sepal width, the third column represented petal length, and the fourth column represented petal width.
+The data was imported from csv file.
+
+
 
 ### Source 
 
@@ -26,3 +30,6 @@ The first column represented sepal length, the second column represented sepal w
  https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html?utm_content=cmp-true
  https://www.youtube.com/watch?v=02BFXhPQWHQ
  https://www.webucator.com/article/python-color-constants-module/
+ https://pythonspot.com/matplotlib-histogram/
+ https://stackoverflow.com/questions/39841733/matplotlib-histogram-how-to-display-the-count-over-the-bar
+ https://nakazakimasahito.wordpress.com/2021/01/26/plotting-a-histogram-of-iris-data/
