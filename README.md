@@ -19,7 +19,9 @@ The first column represented sepal length, the second column represented sepal w
 * pandas 
 * matplotlib. pyplot 
 
-### # Reference: 
+ Reference: 
  https://towardsdatascience.com/dimension-reduction-techniques-with-python-f36ca7009e5c
  https://www.kaggle.com/code/jchen2186/machine-learning-with-iris-dataset
  https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+ https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html?utm_content=cmp-true
+ https://www.youtube.com/watch?v=02BFXhPQWHQ
