@@ -23,6 +23,9 @@ print (iris_data.info())
 # printing summary of dataset
 print (iris_data.describe())
 
+# printing summary using groupby()method
+print (iris_data.groupby('class').describe())
+
 ""## 1. Outputs a summary of each variable to a single text file""
 
 # prepare variables
@@ -138,14 +141,16 @@ plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.colorbar()
 plt.show()
 
-
-plt.scatter(petal_len, petal_wid,cmap='viridis')
+colors = np.arange(150)
+plt.scatter(petal_len, petal_wid,c=colors,cmap='viridis')
 plt.title('Scatter plot of Pental Length v Pental Width')
+plt.colorbar()
 plt.show()
 
-
-plt.scatter(sepal_len, petal_wid, cmap='viridis')
+colors = np.arange(150)
+plt.scatter(sepal_len, petal_wid,c=colors, cmap='viridis')
 plt.title('Scatter plot of Sepal Lenghts v Pental Width')
+plt.colorbar()
 plt.show()
 
 
@@ -153,3 +158,10 @@ plt.scatter(petal_len, sepal_wid, cmap='viridis')
 plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.show()
 
+
+##
+# scatter plot using kind argument
+import seaborn as sns 
+sns.pairplot (iris_data, kind='reg')
+#plt.title('Scater plott of regression')
+plt.show()
