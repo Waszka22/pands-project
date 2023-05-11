@@ -45,7 +45,6 @@ import matplotlib.pyplot as plt
 
 # Data Visualisation
 ## Histagram for Sepal Legth (cm)
-
 # An "interface" to matplotlib.axes.Axes.hist() method
 n, bins, patches = plt.hist(x=sepal_len, bins='auto', color='#BF3EFF',
                             alpha=0.7, rwidth=0.85)
@@ -54,7 +53,7 @@ plt.grid(axis='y', alpha=0.75)
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 # add a title for plot
-plt.title('Sepal Length in cm')
+plt.title('Histagram of Sepal Length in cm')
 # add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
@@ -74,7 +73,7 @@ plt.grid(axis='y', alpha=0.75)
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 # add a title for plot
-plt.title('Sepal Width in cm')
+plt.title('Histagram of Sepal Width in cm')
 # add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
@@ -97,7 +96,7 @@ plt.grid(axis='y', alpha=0.75)
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 # add a title for plot
-plt.title('Petal Width in cm')
+plt.title('Histagram of Petal Width in cm')
 # add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
@@ -117,7 +116,7 @@ plt.grid(axis='y', alpha=0.75)
 # add a title for plot
 plt.xlabel('Value')
 plt.ylabel('Frequency')
-plt.title('Petal Length in cm')
+plt.title('Histagram of Petal Length in cm')
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
 # Set a clean upper y-axis limit.
@@ -135,17 +134,22 @@ plt.show()
 #adding colors 
 colors = np.arange(150)
 plt.scatter(sepal_len, sepal_wid,c=colors, cmap='viridis')
+plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.colorbar()
 plt.show()
 
 
 plt.scatter(petal_len, petal_wid,cmap='viridis')
+plt.title('Scatter plot of Pental Length v Pental Width')
 plt.show()
 
 
 plt.scatter(sepal_len, petal_wid, cmap='viridis')
+plt.title('Scatter plot of Sepal Lenghts v Pental Width')
 plt.show()
 
 
 plt.scatter(petal_len, sepal_wid, cmap='viridis')
+plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.show()
+
