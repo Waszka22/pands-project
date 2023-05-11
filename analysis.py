@@ -50,9 +50,12 @@ import matplotlib.pyplot as plt
 n, bins, patches = plt.hist(x=sepal_len, bins='auto', color='#BF3EFF',
                             alpha=0.7, rwidth=0.85)
 plt.grid(axis='y', alpha=0.75)
+# add a lable for plot
 plt.xlabel('Value')
 plt.ylabel('Frequency')
+# add a title for plot
 plt.title('Sepal Length in cm')
+# add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
 # Set a clean upper y-axis limit.
@@ -60,7 +63,6 @@ plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 
 # save histogram as png
 plt.savefig(f'sepal_len_hist.png')
-
 plt.show()
 
 ## Histagram of sepal width
@@ -68,9 +70,12 @@ plt.show()
 # An "interface" to matplotlib.axes.Axes.hist() method
 n, bins, patches = plt.hist(x=sepal_wid, bins='auto', color='#66CD00', alpha=0.7, rwidth=0.85)
 plt.grid(axis='y', alpha=0.75)
+# add a lable for plot
 plt.xlabel('Value')
 plt.ylabel('Frequency')
+# add a title for plot
 plt.title('Sepal Width in cm')
+# add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
 # Set a clean upper y-axis limit.
@@ -88,9 +93,12 @@ plt.show()
 n, bins, patches = plt.hist(x=petal_wid, bins='auto', color='#98F5FF',
                             alpha=0.7, rwidth=0.85)
 plt.grid(axis='y', alpha=0.75)
+# add a lable for plot
 plt.xlabel('Value')
 plt.ylabel('Frequency')
+# add a title for plot
 plt.title('Petal Width in cm')
+# add a text for plot
 plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
 # Set a clean upper y-axis limit.git
@@ -98,7 +106,6 @@ plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 
 # save histogram as png
 plt.savefig(f'petal_wid_hist.png')
-
 plt.show()
 
 ## Histagram of pental lenght
@@ -107,6 +114,7 @@ plt.show()
 n, bins, patches = plt.hist(x=petal_len, bins='auto', color='#FFD700',
                             alpha=0.7, rwidth=0.85)
 plt.grid(axis='y', alpha=0.75)
+# add a title for plot
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 plt.title('Petal Length in cm')
@@ -120,6 +128,24 @@ plt.savefig(f'petal_len_hist.png')
 
 plt.show()
 
-# Box plot 
+
+"""## 2.Outputs a scatter plot of each pair of variables
+
+"""
+#adding colors 
+colors = np.arange(150)
+plt.scatter(sepal_len, sepal_wid,c=colors, cmap='viridis')
+plt.colorbar()
+plt.show()
 
 
+plt.scatter(petal_len, petal_wid,cmap='viridis')
+plt.show()
+
+
+plt.scatter(sepal_len, petal_wid, cmap='viridis')
+plt.show()
+
+
+plt.scatter(petal_len, sepal_wid, cmap='viridis')
+plt.show()
