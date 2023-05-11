@@ -6,17 +6,38 @@ The Data was extracted from Fisher's Irish data set. The Famous database from Fi
 ___
 
 ### Description about database
-The Iris Data set has 150 rows and 5 colums. 
-The data has two dimension.
-No missing data in this dataset.
-The first column represented sepal length, the second column represented sepal width, the third column represented petal length, and the fourth column represented petal width.
-The data was imported from csv file.
+* The Iris Data set has 150 rows and 5 colums. 
+* The data has two dimension.
+* No missing data in this dataset.
+* The first column represented sepal length, the second column represented sepal width, the third column represented petal length, and the fourth column represented petal width.
+* The data was imported from csv file.
+___
+# Exploring Iris Dataset
 
+The graet metod to explore statiscic summary of Irish dataset is describele() function. This function produces for each columne some statisctic data such a mean, median, std, max, min, quartiles.
+
+![Alt text](describe_irish_data.png)
+
+___
 ### Data Visualisation
+We can use various of data visualization modules to presents data, using Python libraries.
+In this project we use:
+* Matplotlib
+* Seaborn
+ 
+
+To plot the histagram, we import libraries from Matplotlib.
+Mataplotlib is a powerful data visualization suite.
+For each variable, we plot a histagram showing the distribution of the iris dataset. Histagrams are ideal for showing whether a distribution is symmetrical or left/right skewed.
+
+
+![Alt text](histagram_2.png)
+
+
 
 ![Alt text](plot_1.png)
 
-![Alt text](histagram_2.png)
+
 
 ![Alt text](plot_perfect.png)
 
