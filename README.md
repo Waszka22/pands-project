@@ -14,11 +14,11 @@ The data was imported from csv file.
 
 ### Data Visualisation
 
-![Alt text](../../Project%20Snip/histagram_1.png)
+![Alt text](plot_1.png)
 
-![Alt text](../../Project%20Snip/plot_1.png)
+![Alt text](histagram_2.png)
 
-![Alt text](../../Project%20Snip/plot_perfect.png)
+![Alt text](plot_perfect.png)
 
 ### Source 
 
