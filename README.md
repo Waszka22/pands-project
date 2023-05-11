@@ -12,7 +12,13 @@ No missing data in this dataset.
 The first column represented sepal length, the second column represented sepal width, the third column represented petal length, and the fourth column represented petal width.
 The data was imported from csv file.
 
+### Data Visualisation
 
+![Alt text](../../Project%20Snip/histagram_1.png)
+
+![Alt text](../../Project%20Snip/plot_1.png)
+
+![Alt text](../../Project%20Snip/plot_perfect.png)
 
 ### Source 
 
@@ -22,6 +28,7 @@ The data was imported from csv file.
 * math 
 * pandas 
 * matplotlib. pyplot 
+* seaborn
 
  Reference: 
  https://towardsdatascience.com/dimension-reduction-techniques-with-python-f36ca7009e5c
@@ -33,3 +40,7 @@ The data was imported from csv file.
  https://pythonspot.com/matplotlib-histogram/
  https://stackoverflow.com/questions/39841733/matplotlib-histogram-how-to-display-the-count-over-the-bar
  https://nakazakimasahito.wordpress.com/2021/01/26/plotting-a-histogram-of-iris-data/
+ https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+ https://datagy.io/seaborn-pairplot/
+ https://stackoverflow.com/questions/54317168/plotting-a-dataframe-with-seaborn-pairplot-in-multiple-colors
+ https://python-charts.com/correlation/pairs-plot-seaborn/

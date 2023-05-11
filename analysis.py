@@ -14,7 +14,7 @@ column_names=['sepal length in cm','sepal width in cm','petal length in cm','pet
 iris_data.columns = column_names
 print(iris_data)
 
-## Description about database ##git 
+## Description about database ##
 
 # printing data types
 print (iris_data.info())
@@ -26,8 +26,8 @@ print (iris_data.describe())
 # printing summary using groupby()method
 print (iris_data.groupby('class').describe())
 
-""## 1. Outputs a summary of each variable to a single text file""
-
+"""## 1. Outputs a summary of each variable to a single text file""
+"""
 # prepare variables
 sepal_len = iris_data['sepal length in cm']
 sepal_wid = iris_data['sepal width in cm']
@@ -42,7 +42,6 @@ for key,value in variable_names.items():
   f.close()
 
 """## 2. Saves a histogram of each variable to png files
-
 """
 import matplotlib.pyplot as plt
 
@@ -108,6 +107,7 @@ plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 
 # save histogram as png
 plt.savefig(f'petal_wid_hist.png')
+# display a histagram 
 plt.show()
 
 ## Histagram of pental lenght
@@ -127,11 +127,11 @@ plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 
 # save histogram as png
 plt.savefig(f'petal_len_hist.png')
-
+# display a histagram 
 plt.show()
 
 
-"""## 2.Outputs a scatter plot of each pair of variables
+"""## 3.Outputs a scatter plot of each pair of variables
 
 """
 #adding colors 
@@ -139,18 +139,21 @@ colors = np.arange(150)
 plt.scatter(sepal_len, sepal_wid,c=colors, cmap='viridis')
 plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.colorbar()
+# display a plot  
 plt.show()
 
 colors = np.arange(150)
-plt.scatter(petal_len, petal_wid,c=colors,cmap='viridis')
+plt.scatter(petal_len, petal_wid,c=colors, cmap='viridis')
 plt.title('Scatter plot of Pental Length v Pental Width')
 plt.colorbar()
+# display a plot  
 plt.show()
 
 colors = np.arange(150)
 plt.scatter(sepal_len, petal_wid,c=colors, cmap='viridis')
 plt.title('Scatter plot of Sepal Lenghts v Pental Width')
 plt.colorbar()
+# display a plot  
 plt.show()
 
 
@@ -158,10 +161,22 @@ plt.scatter(petal_len, sepal_wid, cmap='viridis')
 plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.show()
 
-
-##
-# scatter plot using kind argument
+"""## 4.Additional Analysis""
+"""
+# import the seaborn 
 import seaborn as sns 
+# scatter plot using kind argument/regresion
 sns.pairplot (iris_data, kind='reg')
-#plt.title('Scater plott of regression')
+# display a plot  
+plt.show()
+
+#
+total_setosa = iris_data[iris_data['class'] == 'Iris-setosa'].shape[0]
+total_virginica = iris_data[iris_data['class'] == 'Iris-virginica'].shape[0]
+total_versicolor = iris_data[iris_data['class'] == 'Iris-versicolor'].shape[0]
+
+mylabels = ["Iris-setosa", "Iris-virginica", "Iris-versicolor"]
+myexplode = [0.2, 0, 0]
+all_classes = np.array([total_setosa,total_virginica,total_versicolor])
+plt.pie(all_classes,labels=mylabels,explode = myexplode, shadow = True)
 plt.show()
