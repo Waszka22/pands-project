@@ -1,5 +1,5 @@
 # pands-project
-
+Final assignment for Programming and Scripting module. The module presents introduction to solving problems using programming language Python.
 ___
 The Data was extracted from Fisher's Irish data set. The Famous database from Fisher, 1936. The data set consists of 50 sampels of three Iris species: Iris-setosa, Iris-versicolor and Iris-virginica.
 
@@ -40,6 +40,17 @@ ___
 The head() metod in Python presents a specific number of top ten rows.
 
  ![Alt text](top%2010.png)
+___
+The info()methods diplay information about the Iris dataset. The method prints: 
+* number of columns
+* columns labels
+* columns data types 
+* memory usage
+* the number of cells in each column 
+
+ ![Alt text](info.png)
+
+ Only one columns has categorical data and all columns are the numeric type with non-Null. 
 ___
 ### Data Visualisation
 We can use various of data visualization modules to presents data, using Python libraries.
