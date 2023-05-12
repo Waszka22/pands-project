@@ -14,7 +14,7 @@ column_names=['sepal length in cm','sepal width in cm','petal length in cm','pet
 iris_data.columns = column_names
 print(iris_data)
 
-## Description about database ##
+## Description about database 
 
 # printing data types
 print (iris_data.info())
@@ -25,6 +25,9 @@ print (iris_data.describe())
 
 # printing summary using groupby()method
 print (iris_data.groupby('class').describe())
+
+ # printing top 10 observation
+print (iris_data.head(10))
 
 """## 1. Outputs a summary of each variable to a single text file""
 """
@@ -173,6 +176,6 @@ mylabels = ["Iris-setosa", "Iris-virginica", "Iris-versicolor"]
 myexplode = [0.2, 0, 0]
 all_classes = np.array([total_setosa,total_virginica,total_versicolor])
 plt.pie(all_classes,labels=mylabels,explode = myexplode, shadow = True)
-#add titlegir
+#add title
 plt.title('Pie of Irish Species')
 plt.show()
