@@ -46,6 +46,7 @@ for key,value in variable_names.items():
 
 """## 2. Saves a histogram of each variable to png files
 """
+# import matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 # Data Visualisation
@@ -107,7 +108,6 @@ plt.text(23, 45, r'$\mu=15, b=3$')
 maxfreq = n.max()
 # Set a clean upper y-axis limit.git
 plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
-
 # save histogram as png
 plt.savefig(f'petal_wid_hist.png')
 # display a histagram 
@@ -119,7 +119,7 @@ plt.show()
 n, bins, patches = plt.hist(x=petal_len, bins='auto', color='#FFD700',
                             alpha=0.7, rwidth=0.85)
 plt.grid(axis='y', alpha=0.75)
-# add a title for plot
+# add a title for plot and lables
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 plt.title('Histagram of Petal Length in cm')
@@ -137,21 +137,26 @@ plt.show()
 """## 3.Outputs a scatter plot of each pair of variables
 
 """
+# create scatter plot 
 colors = np.arange(150)
 plt.scatter(sepal_len, sepal_wid,c=colors, cmap='viridis')
 plt.colorbar()
+plt.title('scatter plot')
 # display a scatter
 plt.show()
 
 plt.scatter(petal_len, petal_wid, cmap='viridis')
+plt.title('scatter plot')
 # display a scatter
 plt.show()
 
 plt.scatter(sepal_len, petal_wid, cmap='viridis')
+plt.title('scatter plot')
 # display a scatter
 plt.show()
 
 plt.scatter(petal_len, sepal_wid, cmap='viridis')
+plt.title('scatter plot')
 # display a scatter
 plt.show()
 
