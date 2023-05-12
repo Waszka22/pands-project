@@ -173,6 +173,6 @@ mylabels = ["Iris-setosa", "Iris-virginica", "Iris-versicolor"]
 myexplode = [0.2, 0, 0]
 all_classes = np.array([total_setosa,total_virginica,total_versicolor])
 plt.pie(all_classes,labels=mylabels,explode = myexplode, shadow = True)
-#add title
+#add titlegir
 plt.title('Pie of Irish Species')
 plt.show()
