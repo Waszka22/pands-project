@@ -134,35 +134,29 @@ plt.show()
 """## 3.Outputs a scatter plot of each pair of variables
 
 """
-#adding colors 
 colors = np.arange(150)
 plt.scatter(sepal_len, sepal_wid,c=colors, cmap='viridis')
-plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
 plt.colorbar()
-# display a plot  
+# display a scatter
 plt.show()
 
-colors = np.arange(150)
-plt.scatter(petal_len, petal_wid,c=colors, cmap='viridis')
-plt.title('Scatter plot of Pental Length v Pental Width')
-plt.colorbar()
-# display a plot  
+plt.scatter(petal_len, petal_wid, cmap='viridis')
+# display a scatter
 plt.show()
 
-colors = np.arange(150)
-plt.scatter(sepal_len, petal_wid,c=colors, cmap='viridis')
-plt.title('Scatter plot of Sepal Lenghts v Pental Width')
-plt.colorbar()
-# display a plot  
+plt.scatter(sepal_len, petal_wid, cmap='viridis')
+# display a scatter
 plt.show()
-
 
 plt.scatter(petal_len, sepal_wid, cmap='viridis')
-plt.title('Scatter plot of Sepal Lenghts v Sepal Width')
+# display a scatter
 plt.show()
+
 
 """## 4.Additional Analysis""
 """
+
+# scatter plot 
 # import the seaborn 
 import seaborn as sns 
 # scatter plot using kind argument/regresion
@@ -170,13 +164,15 @@ sns.pairplot (iris_data, kind='reg')
 # display a plot  
 plt.show()
 
-#
+# Pie of Irish Spicies
 total_setosa = iris_data[iris_data['class'] == 'Iris-setosa'].shape[0]
 total_virginica = iris_data[iris_data['class'] == 'Iris-virginica'].shape[0]
 total_versicolor = iris_data[iris_data['class'] == 'Iris-versicolor'].shape[0]
-
+#add a labels
 mylabels = ["Iris-setosa", "Iris-virginica", "Iris-versicolor"]
 myexplode = [0.2, 0, 0]
 all_classes = np.array([total_setosa,total_virginica,total_versicolor])
 plt.pie(all_classes,labels=mylabels,explode = myexplode, shadow = True)
+#add title
+plt.title('Pie of Irish Species')
 plt.show()
