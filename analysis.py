@@ -205,18 +205,11 @@ Reference:
  * https://stackoverflow.com/questions/54317168/
  * https://python-charts.com/correlation/pairs-plot-seaborn/
  * https://www.w3resource.com/machine-learning/scikit-learn/iris/python-machine-learning-scikit-learn-iris-visualization-exercise-3.php
-
  * https://python-charts.com/correlation/pairs-plot-seaborn/
-
  * https://stackoverflow.com/questions/61673931/iris-data-regplot-out-of-dataframe-choosing-color
-
-* https://datagy.io/seaborn-pairplot/
-
-* https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/
-
-* https://www.educative.io/answers/what-are-head-and-tail-functions-in-pandas
-
-* https://www.w3schools.com/python/pandas/ref_df_info.asp#:~:text=The%20info()%20method%20prints,method%20actually%20prints%20the%20info.
-
-* https://www.javatpoint.com/info-function-in-python
-* https://archive.ics.uci.edu/ml/datasets/iris
+ * https://datagy.io/seaborn-pairplot/
+ * https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/
+ * https://www.educative.io/answers/what-are-head-and-tail-functions-in-pandas
+ * https://www.w3schools.com/python/pandas/ref_df_info.asp#:~:text=The%20info()%20method%20prints,method%20actually%20prints%20the%20info.
+ * https://www.javatpoint.com/info-function-in-python
+ * https://archive.ics.uci.edu/ml/datasets/iris
