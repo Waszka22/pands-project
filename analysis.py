@@ -184,3 +184,39 @@ plt.pie(all_classes,labels=mylabels,explode = myexplode, shadow = True)
 #add title
 plt.title('Pie of Irish Species')
 plt.show()
+
+Reference: 
+
+ * https://towardsdatascience.com/
+ * https://dimension-reduction-techniques-with-python-f36ca7009e5c
+ * https://www.kaggle.com/code/jchen2186/machine-learning-with-iris-dataset
+ * https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+ * https://www.pycodemates.com/2022/05/
+ * iris-dataset-classification-with-python.html?utm_content=cmp-true
+ * https://www.youtube.com/watch?v=02BFXhPQWHQ
+ * https://www.webucator.com/article/python-color-constants-module/
+ * https://pythonspot.com/matplotlib-histogram/
+ * https://stackoverflow.com/questions/39841733/
+ * matplotlib-histogram-how-to-display-the-count-over-the-bar
+ * https://nakazakimasahito.wordpress.com/2021/01/26/
+ * plotting-a-histogram-of-iris-data/
+ * https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+ * https://datagy.io/seaborn-pairplot/
+ * https://stackoverflow.com/questions/54317168/
+ * https://python-charts.com/correlation/pairs-plot-seaborn/
+ * https://www.w3resource.com/machine-learning/scikit-learn/iris/python-machine-learning-scikit-learn-iris-visualization-exercise-3.php
+
+ * https://python-charts.com/correlation/pairs-plot-seaborn/
+
+ * https://stackoverflow.com/questions/61673931/iris-data-regplot-out-of-dataframe-choosing-color
+
+* https://datagy.io/seaborn-pairplot/
+
+* https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/
+
+* https://www.educative.io/answers/what-are-head-and-tail-functions-in-pandas
+
+* https://www.w3schools.com/python/pandas/ref_df_info.asp#:~:text=The%20info()%20method%20prints,method%20actually%20prints%20the%20info.
+
+* https://www.javatpoint.com/info-function-in-python
+* https://archive.ics.uci.edu/ml/datasets/iris
