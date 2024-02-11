@@ -1,5 +1,5 @@
 # Programming and Scripting
-Final assignment for <em><strong>Programming and Scripting</strong></em module. The module presents introduction to solving problems using programming language Python.
+Final assignment for <em><strong>Programming and Scripting</strong></em> module. The module presents introduction to solving problems using programming language Python.
 
 ___ 
 
